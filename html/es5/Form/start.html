@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Registration form</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1 style="font-size:x-large">Register</h1>
+
+      <form>
+        <fieldset style="width:350px">
+          <legend>Personal details</legend>
+          <input type="text" name="email" placeholder="Email">
+          <input type="text" name="password" placeholder="Password">
+          <br/>
+          <input type="text" name="first_name" placeholder="First name">
+          <input type="text" name="last_name" placeholder="Last name">
+          <br/>
+          <br/>
+          <label for="date_of_birth">Date of birth</label>
+          <input type="date" name="date_of_birth">
+          <br/>
+          <br/>
+          <input type="text" name="phone_number" maxlength="10" placeholder="Phone number">
+        </fieldset>
+
+        <br/>
+
+        <fieldset style="width:350px">
+          <legend>Choose your plan</legend>
+          <select name="plan">
+            <option value="">--Choose your plan--</option>
+            <option value="free_plan">Free</option>
+            <optgroup label="Monthly">
+              <option value="plan1">14.99$</option>
+              <option value="plan2">19.99$</option>
+              <option value="plan3">49.99$</option>
+            </optgroup>
+          </select>
+          <br/>
+          <br/>
+          <label><input type="checkbox" name="pro_plan" /> PRO Plan</label>
+        </fieldset>
+
+        <br/>
+
+        <fieldset style="width:350px">
+          <legend>Billing details</legend>
+          <label for="card_number">Credit card number</label>
+          <input type="text" name="card_number" maxlength="19" size="16">
+          <input type="text" name="cvc" maxlength="3" size="1" placeholder="CVC">
+          <br/>
+          <br/>
+          <label for="expiration_date">Expiration date</label>
+          <input type="text" name="expiration_date" size="9" placeholder="MM/DD/YYYY">
+          <br/>
+          <br/>
+          <label for="billing_address">Billing address</label>
+          <input type="text" name="billing_address">
+        </fieldset>
+
+        <br/>
+
+        <input type="submit">
+      </form>
+    </center>
+  </body>
+</html>
