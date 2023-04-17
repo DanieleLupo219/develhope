@@ -1,0 +1,29 @@
+.card {
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 8px 8px 8px 8px;
+    max-width: 300px;
+    padding: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+.responsive {
+    width: 100%;
+    height: auto;
+    border-radius: 4px 4px 0 0;
+  }
+
+h1 {
+    margin: 0px;
+    padding: 8px;
+}
+
+p {
+    margin: 0;
+    padding: 12px;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.link {
+    margin: 0;
+    padding:16px;
+}
