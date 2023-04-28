@@ -5,21 +5,25 @@ body {
 
 #yellow {
     order: 1;
+    flex-grow: 1;
 }
 
 #red {
     order: 2;
+    flex-grow: 1;
 }
 
 #green {
     order:3;
+    flex-grow: 1;
 }
 
 #orange {
     order: 4;
-    width: 100%;
+    flex-grow: 12;
 }
 
 #blue {
     order:4;
+    flex-grow: 1;
 }
