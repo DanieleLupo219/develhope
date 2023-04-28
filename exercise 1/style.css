@@ -1,0 +1,32 @@
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 35px;
+  border: 2px solid red;
+}
+div h1 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-bottom: 2px solid blue;
+  color: green;
+}
+div section {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+}
+div section article {
+  padding: 20px;
+  border: 1px solid green;
+  text-align: center;
+}
+div section article:nth-child(odd) {
+  color: blue;
+}
+div section article:nth-child(even) {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
