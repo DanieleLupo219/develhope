@@ -3,7 +3,7 @@ function printAsyncName(callback, name) {
     callback();
     setTimeout(() => {
       console.log(name);
-    }, 2000);
+    }, 1000);
   }, 1000);
 }
 
