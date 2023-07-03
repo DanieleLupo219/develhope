@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Hello from "./Hello";
 import Message from "./Message";
+import Welcome from "./Welcome";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Hello />
+        <Welcome name="Dan" />
         <Message />
         <a
           className="App-link"
