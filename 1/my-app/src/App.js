@@ -1,15 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Hello from "./Hello";
 import Message from "./Message";
 import Welcome from "./Welcome";
+import Counter from "./Counter";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Hello />
+        <Counter />
         <Welcome name={<strong>Dan</strong>} age={15} />
         <Message />
         <a
