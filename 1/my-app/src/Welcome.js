@@ -3,7 +3,7 @@ function Age(props) {
 }
 
 function Welcome(props) {
-  const renderAge = props.age > 18 && props.age < 65;
+  const renderAge = props.name == "John" && props.age > 18 && props.age < 65;
   return (
     <div>
       <p>Welcome, {props.name}!</p>
