@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
+        <Counter initial={0} increment={1} interval={1000} />
         <Welcome name={<strong>Dan</strong>} age={15} />
         <Message />
         <a
