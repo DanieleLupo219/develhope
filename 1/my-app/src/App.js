@@ -1,16 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Message from "./Message";
-import Welcome from "./Welcome";
-import ClickTracker from "./ClickTracker";
+import InteractiveWelcome from "./InteractiveWelcome";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <ClickTracker />
-        <Welcome name={<strong>Dan</strong>} age={15} />
+        <InteractiveWelcome name={<strong>Dan</strong>} />
         <Message />
         <a
           className="App-link"
