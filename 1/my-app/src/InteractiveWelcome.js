@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Welcome from "./Welcome";
 
-function InteractiveWelcome(props) {
+function InteractiveWelcome() {
   const [name, setName] = useState();
   return (
     <div>
