@@ -1,21 +1,24 @@
-function TodoList() {
+import React, { useState } from "react";
+
+const TodoList = () => {
   const [items, setItems] = useState([]);
   const [inputValue, setInputValue] = useState("");
 
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
   const handleAddItem = () => {
-    setItems([...items, inputValue]);
-    setInputValue("");
+    if (inputValue.trim() !== "") {
+      setItems([...items, inputValue]);
+      setInputValue("");
+    }
   };
 
   return (
     <div>
-      <input
-        type="text"
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-      />
-      <button onClick={handleAddItem}>Aggiungi</button>
-
+      <input type="text" value={inputValue} onChange={handleInputChange} />
+      <button onClick={handleAddItem}>Add Item</button>
       <ul>
         {items.map((item, index) => (
           <li key={index}>{item}</li>
@@ -23,6 +26,6 @@ function TodoList() {
       </ul>
     </div>
   );
-}
+};
 
 export default TodoList;
