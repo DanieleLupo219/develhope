@@ -9,6 +9,10 @@ const TodoList = () => {
     setInputValue("");
   };
 
+  const handleReset = () => {
+    setItems([]);
+  };
+
   return (
     <>
       <input
@@ -22,6 +26,9 @@ const TodoList = () => {
           <li key={index}>{item}</li>
         ))}
       </ul>
+      <button type="reset" onClick={handleReset}>
+        Reset List
+      </button>
     </>
   );
 };
