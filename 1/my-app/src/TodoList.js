@@ -13,6 +13,12 @@ const TodoList = () => {
     setItems([]);
   };
 
+  const handleClear = (index) => {
+    const clearedItems = [...items];
+    clearedItems.splice(index, 1);
+    setItems(clearedItems);
+  };
+
   return (
     <>
       <input
@@ -23,7 +29,12 @@ const TodoList = () => {
       <button onClick={handleAddItem}>Add Item</button>
       <ul>
         {items.map((item, index) => (
-          <li key={index}>{item}</li>
+          <div>
+            <li key={index}>{item}</li>
+            <button type="button" onClick={() => handleClear(index)}>
+              clear item
+            </button>
+          </div>
         ))}
       </ul>
       <button type="reset" onClick={handleReset}>
