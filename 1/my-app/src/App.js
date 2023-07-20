@@ -1,14 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Message from "./Message";
-import Login from "./Login";
+import UncontrolledLogin from "./UncontrolledLogin";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Login />
+        <UncontrolledLogin />
         <Message />
         <a
           className="App-link"
