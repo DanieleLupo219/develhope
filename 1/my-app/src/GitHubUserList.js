@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import GitHubUser from "./GitHubUser";
+import GithubUser from "./GitHubUser";
+import { Link, Outlet } from "react-router-dom";
 
 function GitHubUserList() {
   const [users, setUsers] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     const newUser = e.target.username.value;
     if (newUser !== "") {
       setUsers([...users, newUser]);
@@ -22,10 +24,13 @@ function GitHubUserList() {
       <ul>
         {users.map((user, index) => (
           <li key={index}>
-            <GitHubUser username={user} />
+            <GithubUser username={user} />
           </li>
         ))}
       </ul>
+
+      <Link to={`/users/${users}`}>{users}</Link>
+      <Outlet />
     </div>
   );
 }
