@@ -1,15 +1,19 @@
 import logo from "./logo.svg";
 import "./App.css";
-import React from "react";
-import GitHubUser from "./GitHubUser";
-import GitHubUserList from "./GitHubUserList";
+import CarDetails from "./CarDetails";
+
+const carData = {
+  model: "Tesla",
+  year: "2020",
+  color: "White",
+};
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <GitHubUser username="DanieleLupo219" />
+        <CarDetails initialData={carData} />
         <a
           className="App-link"
           href="https://reactjs.org"
