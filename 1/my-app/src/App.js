@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
+import GitHubUser from "./GitHubUser";
 import GitHubUserList from "./GitHubUserList";
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <GitHubUserList />
+        <GitHubUser username="DanieleLupo219" />
         <a
           className="App-link"
           href="https://reactjs.org"
